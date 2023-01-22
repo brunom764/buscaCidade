@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ), url(./background.jpg);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+.titulo{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 7.5px;
+    color: #000000 ;
+}
+
+.search-form {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+input.search {
+    margin: 0;
+    text-align: center;
+    outline: 0;
+    border: none;
+    width: 100%;
+    z-index: 2;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+.suggestions {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.city {
+    width: 100%;
+    background: white;
+    margin-top: 8rem;
+    list-style: none;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    margin: 5px 0;
+    padding:  10px 20px;
+    transition: background 0.2s;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
