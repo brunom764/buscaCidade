@@ -10,13 +10,16 @@ function filterCity(wordToMatch, cities) {
     return cities.filter((place) => {
         // filtrar as palavras que dão match com o que for pesquisado
         const regex = new RegExp(wordToMatch, "gi");
-        return place.nome.match(regex);
+        if (place.nome.match(regex)){
+            return place
+        }
     });
 }
 
 
 function showCities() { // Add no html as cidades
     const filterAray = filterCity(this.value, cities);
+    console.log(filterAray)
     const htmlCreator = filterAray
         .map((place) => {
             const regex = new RegExp(this.value, "gi");
@@ -27,7 +30,7 @@ function showCities() { // Add no html as cidades
 
             return `
       <li class="city">
-        <span class="name" >${cityName}</span>       
+        <span class="name" >${place.nome} - ${place.microrregiao.mesorregiao.UF.sigla}</span>       
       </li>
     `;
         })
