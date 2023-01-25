@@ -1,4 +1,4 @@
-# Busca cidade
+# Buscador de cidade
 
 ![image](https://user-images.githubusercontent.com/100159869/214062499-d4f74d03-dd0e-424f-bf25-ceeee4703dd6.png)
 
