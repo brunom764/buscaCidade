@@ -10,7 +10,7 @@ Desafio de revisão de AJAX com javaScript consumindo uma API de cidades brasile
 ### 🏁 Features
 
 - [x] Filtro de busca de nomes
-- [ ] Aba com mais sobre cada cidade
+- [x] Requisição de dados da API de cidades
 
 ### 🛠 Tecnologias
 
